@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mobilearn — Get Paid Online | Powered by Mobilelabs UG</title>
+<meta name="description" content="Sign up with an Airtel Uganda number, activate with UGX 19,500 via Airtel *185*9# Merchant Code 7285061 (MOBILE LABS), watch YouTube videos for $0.50 each, complete tasks and withdraw from your dashboard." />
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f8fafc;
+    --card:#ffffff;
+    --line:#e2e8f0;
+    --line-strong:#cbd5e1;
+    --text:#0f172a;
+    --text-soft:#334155;
+    --muted:#64748b;
+    --primary:#1d4ed8;
+    --primary-deep:#1e3a8a;
+    --accent:#059669;
+    --accent-soft:#d1fae5;
+    --airtel:#e40000;
+    --grad:linear-gradient(135deg,#1e40af 0%,#0f766e 100%);
+    --radius:14px;
+    --radius-lg:20px;
+    --max:1160px;
+    --shadow-sm:0 1px 2px rgba(15,23,42,.06);
+    --shadow:0 4px 20px rgba(15,23,42,.08);
+    --shadow-lg:0 24px 60px -20px rgba(15,23,42,.18);
+    --mono:'SF Mono',ui-monospace,'Courier New',monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+  input,select,textarea{font:inherit}
+  ::selection{background:rgba(29,78,216,.18)}
+  .container{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:24px}
+
+  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .section{padding:clamp(56px,8vw,96px) 0;position:relative}
+  .section-head{max-width:600px;margin:0 auto clamp(34px,5vw,48px);text-align:center}
+  .section-head h2{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.12;letter-spacing:-.025em;margin:12px 0 10px;font-weight:800;color:var(--text)}
+  .section-head p{color:var(--muted);font-size:1rem}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:10px;font-weight:600;font-size:.95rem;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease;white-space:nowrap}
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 20px -6px rgba(30,64,175,.4)}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 14px 28px -8px rgba(30,64,175,.5)}
+  .btn-ghost{border:1px solid var(--line-strong);color:var(--text);background:#fff}
+  .btn-ghost:hover{background:var(--bg-soft);border-color:#94a3b8;transform:translateY(-1px)}
+  .btn-block{width:100%}
+
+  /* ============ AIRTEL LOGO ============ */
+  .airtel-logo{display:inline-flex;align-items:center;gap:8px;vertical-align:middle}
+  .airtel-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--airtel);color:#fff;
+    padding:5px 12px 5px 9px;border-radius:999px;
+    font-weight:800;font-size:.78rem;letter-spacing:-.01em;
+    line-height:1.1;text-transform:lowercase;
+    box-shadow:0 6px 14px -6px rgba(228,0,0,.55);
+    white-space:nowrap;
+  }
+  .airtel-badge svg{width:15px;height:15px;flex:none}
+  .airtel-badge .word{letter-spacing:-.02em;font-size:.92em}
+  .airtel-badge .word b{font-weight:800}
+  .pay-note .airtel-badge,
+  .on-dark .airtel-badge{background:#fff;color:var(--airtel);box-shadow:none;border:1px solid rgba(255,255,255,.4)}
+
+  /* ============ NAV ============ */
+  .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid transparent;transition:border-color .3s ease,box-shadow .3s ease}
+  .nav.scrolled{border-bottom-color:var(--line);box-shadow:0 1px 12px rgba(15,23,42,.04)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.12rem;letter-spacing:-.02em;color:var(--text)}
+  .logo-mark{width:36px;height:36px;border-radius:10px;background:var(--grad);display:grid;place-items:center;color:#fff;flex:none;box-shadow:0 6px 16px -6px rgba(30,64,175,.5)}
+  .logo-mark svg{width:20px;height:20px}
+  .nav-links{display:flex;align-items:center;gap:26px}
+  .nav-links a{font-size:.92rem;color:var(--muted);font-weight:500;transition:color .2s;position:relative;padding:4px 0}
+  .nav-links a:hover{color:var(--text)}
+  .nav-links a.active{color:var(--primary);font-weight:700}
+  .nav-links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--grad)}
+  .nav-cta{display:flex;align-items:center;gap:12px}
+  .nav-cta .btn{padding:10px 20px;font-size:.9rem}
+  .burger{display:none;width:42px;height:42px;border-radius:10px;border:1px solid var(--line);place-items:center;background:#fff}
+  .burger span{display:block;width:18px;height:2px;background:var(--text);border-radius:2px;position:relative;transition:.3s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
+  .burger span::before{top:-6px}
+  .burger span::after{top:6px}
+  .burger[aria-expanded="true"] span{background:transparent}
+  .burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+  .burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+  .mobile-menu{display:none;flex-direction:column;gap:4px;padding:12px 24px 22px;border-top:1px solid var(--line);background:#fff}
+  .mobile-menu.open{display:flex}
+  .mobile-menu a{padding:12px 4px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line)}
+  .mobile-menu a:hover{color:var(--text)}
+  .mobile-menu a.active{color:var(--primary);font-weight:700}
+  .mobile-menu .btn{margin-top:14px;border-bottom:none}
+
+  /* ============ PAGES ============ */
+  .page{display:none}
+  .page.active{display:block;animation:pageIn .35s cubic-bezier(.22,1,.36,1)}
+  @keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  .page-head{max-width:680px;margin-inline:auto;text-align:center;padding-top:clamp(36px,6vw,60px)}
+  .page-head h1{font-size:clamp(2rem,4.4vw,3rem);line-height:1.1;letter-spacing:-.03em;font-weight:800;margin:14px 0 12px;color:var(--text)}
+  .page-head p{color:var(--muted);font-size:1.02rem}
+
+  /* ============ HERO ============ */
+  .hero{position:relative;overflow:hidden;padding:clamp(40px,6vw,80px) 0 clamp(48px,7vw,90px);background:#fff}
+  .glow{position:absolute;border-radius:50%;filter:blur(120px);pointer-events:none;z-index:0}
+  .glow-1{width:560px;height:560px;background:rgba(30,64,175,.09);top:-240px;left:-160px}
+  .glow-2{width:520px;height:520px;background:rgba(13,148,136,.08);top:-140px;right:-180px}
+  .glow-3{width:600px;height:600px;background:rgba(30,64,175,.04);bottom:-380px;left:35%}
+  .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,64px);align-items:center}
+  .hero h1{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.06;letter-spacing:-.035em;font-weight:800;margin:20px 0 16px;color:var(--text)}
+  .hero-sub{color:var(--muted);font-size:clamp(1rem,1.6vw,1.1rem);max-width:500px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+  .hero-trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:24px;font-size:.85rem;color:var(--muted)}
+  .hero-trust span{display:inline-flex;align-items:center;gap:7px}
+  .check{width:16px;height:16px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none;font-size:.6rem}
+  .pill{display:inline-flex;align-items:center;gap:10px;padding:7px 16px 7px 8px;border-radius:999px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-sm);font-size:.82rem;color:var(--muted);font-weight:500}
+  .pill b{color:var(--text)}
+  .pill-dot{width:22px;height:22px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-size:.7rem;color:#fff;flex:none}
+  .pill-live{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(5,150,105,.5);animation:pulse 2s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(5,150,105,0)}100%{box-shadow:0 0 0 0 rgba(5,150,105,0)}}
+
+  /* ============ PHONE ============ */
+  .phone-wrap{display:flex;justify-content:center;position:relative}
+  .phone{position:relative;width:min(300px,86vw);aspect-ratio:9/18.6;border-radius:40px;padding:9px;background:linear-gradient(160deg,#1e293b,#0f172a 55%);border:1px solid #334155;box-shadow:0 40px 80px -30px rgba(15,23,42,.35),0 0 0 1px rgba(15,23,42,.05);transform:rotate(-3deg);animation:float 7s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-14px)}}
+  .phone-screen{position:relative;height:100%;border-radius:32px;overflow:hidden;background:radial-gradient(120% 80% at 50% 0%,#1e293b 0%,#0f172a 60%);display:flex;flex-direction:column;padding:22px 16px 16px;gap:12px}
+  .notch{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:74px;height:16px;border-radius:999px;background:#020617}
+  .ph-head{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+  .ph-avatar{width:30px;height:30px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-size:.72rem;font-weight:800;color:#fff}
+  .ph-hi{font-size:.7rem;color:#94a3b8;line-height:1.3}
+  .ph-hi b{display:block;color:#f1f5f9;font-size:.82rem}
+  .ph-balance{background:linear-gradient(135deg,rgba(29,78,216,.35),rgba(13,148,136,.2));border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px}
+  .ph-balance small{font-size:.65rem;color:#cbd5e1;letter-spacing:.06em;text-transform:uppercase}
+  .ph-balance .amt{font-size:1.5rem;font-weight:800;letter-spacing:-.03em;margin-top:2px;color:#fff}
+  .ph-balance .chg{font-size:.68rem;color:#34d399;margin-top:2px}
+  .ph-chart{display:flex;align-items:flex-end;gap:6px;height:46px;margin-top:8px}
+  .ph-chart i{flex:1;border-radius:4px 4px 2px 2px;background:linear-gradient(180deg,#34d399,rgba(29,78,216,.6));opacity:.9}
+  .ph-label{font-size:.68rem;color:#94a3b8;letter-spacing:.07em;text-transform:uppercase;margin-top:2px}
+  .ph-task{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:11px;padding:9px 11px}
+  .ph-task .ic{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;flex:none;background:rgba(59,130,246,.25);color:#93c5fd;font-size:.7rem}
+  .ph-task .ic.yt{background:rgba(239,68,68,.28);color:#fca5a5}
+  .ph-task .tx{flex:1;min-width:0}
+  .ph-task .tx b{display:block;font-size:.72rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#f1f5f9}
+  .ph-task .tx small{font-size:.6rem;color:#94a3b8}
+  .ph-task .pay{font-size:.72rem;font-weight:800;color:#34d399}
+  .ph-bar{margin-top:auto;display:flex;justify-content:space-around;padding-top:10px;border-top:1px solid rgba(255,255,255,.08);font-size:.58rem;color:#94a3b8;text-align:center}
+  .ph-bar div.active{color:#34d399}
+
+  /* ============ STRIP ============ */
+  .strip{border-block:1px solid var(--line);background:var(--bg-soft)}
+  .strip-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:34px 0;text-align:center}
+  .strip-num{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;letter-spacing:-.03em}
+  .strip-lbl{font-size:.8rem;color:var(--muted);margin-top:2px}
+
+  /* ============ CARDS ============ */
+  .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:26px;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;position:relative}
+  .card:hover{transform:translateY(-3px);border-color:#93c5fd;box-shadow:var(--shadow)}
+  .card h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em;margin-bottom:6px;color:var(--text)}
+  .card p{color:var(--muted);font-size:.9rem;line-height:1.55}
+  .step-num{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;margin-bottom:16px;font-weight:800;font-size:.95rem;color:#fff;background:var(--grad);box-shadow:0 8px 18px -8px rgba(30,64,175,.5)}
+  .tick{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-size:.62rem;flex:none;margin-top:2px}
+
+  .panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(22px,3.5vw,34px);box-shadow:var(--shadow-sm)}
+  .panel h3{font-size:1.05rem;font-weight:700;margin-bottom:10px;color:var(--text)}
+  .panel > p{color:var(--muted);font-size:.93rem}
+  .list{list-style:none;display:grid;gap:12px;margin-top:14px}
+  .list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:.92rem}
+  .list li b{color:var(--text);font-weight:700}
+  .panel-accent{background:linear-gradient(150deg,#eff6ff,#ecfdf5);border-color:#bfdbfe}
+
+  .home-cta{text-align:center;background:var(--bg-soft);border:1px solid var(--line);border-radius:28px;padding:clamp(32px,5vw,56px);box-shadow:var(--shadow-sm)}
+  .home-cta h2{font-size:clamp(1.5rem,3.4vw,2.2rem);letter-spacing:-.02em;font-weight:800;margin-bottom:10px}
+  .home-cta p{color:var(--muted);margin-bottom:24px}
+  .home-cta .hero-actions{justify-content:center;margin-top:0}
+
+  .auth-wrap{max-width:440px;margin:0 auto;width:100%}
+  .auth-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(26px,4vw,40px);box-shadow:var(--shadow-lg)}
+  .auth-card h1{font-size:1.55rem;font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+  .auth-card .sub{color:var(--muted);font-size:.92rem;margin-bottom:24px}
+  .form-stack{display:flex;flex-direction:column;gap:12px}
+  .form-stack input{width:100%;padding:14px 18px;border-radius:10px;border:1px solid var(--line-strong);background:#fff;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s}
+  .form-stack input::placeholder{color:#94a3b8}
+  .form-stack input:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(29,78,216,.1)}
+  .form-stack .btn{margin-top:6px;border-radius:10px}
+  .auth-msg{font-size:.86rem;margin-top:14px;min-height:20px;font-weight:600;color:var(--accent)}
+  .auth-msg.err{color:#dc2626}
+  .auth-alt{margin-top:18px;font-size:.88rem;color:var(--muted);text-align:center}
+  .auth-alt a{color:var(--primary);font-weight:700}
+  .auth-alt a:hover{text-decoration:underline}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:22px;align-items:start}
+  .contact-item{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+  .contact-item:last-child{border-bottom:none}
+  .contact-item .ic{width:38px;height:38px;border-radius:10px;background:#eff6ff;color:var(--primary);display:grid;place-items:center;flex:none;font-size:1rem}
+  .contact-item b{display:block;font-size:.9rem;color:var(--text)}
+  .contact-item span{font-size:.88rem;color:var(--muted);display:block;margin-top:4px}
+  .form-stack textarea{width:100%;min-height:120px;padding:14px 18px;border-radius:10px;border:1px solid var(--line-strong);background:#fff;color:var(--text);outline:none;resize:vertical;transition:border-color .2s,box-shadow .2s}
+  .form-stack textarea::placeholder{color:#94a3b8}
+  .form-stack textarea:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(29,78,216,.1)}
+
+  .legal-block{padding:26px 0;border-bottom:1px solid var(--line)}
+  .legal-block:last-child{border-bottom:none}
+  .legal-block h2{font-size:1.15rem;font-weight:800;letter-spacing:-.01em;margin-bottom:8px}
+  .legal-block p{color:var(--muted);font-size:.93rem}
+
+  .code-inline{
+    font-family:var(--mono);letter-spacing:.08em;background:#eff6ff;color:var(--primary-deep);
+    padding:2px 9px;border-radius:5px;border:1px solid #bfdbfe;font-weight:800;
+    display:inline-block;font-size:.95em;white-space:nowrap;
+  }
+
+  .pay-steps{display:grid;gap:10px;margin-top:14px}
+  .pay-step{
+    display:flex;gap:12px;align-items:flex-start;
+    background:#fff;border:1px solid var(--line);border-radius:11px;padding:12px 14px;
+    transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease;
+  }
+  .pay-step:hover{border-color:#93c5fd;box-shadow:var(--shadow-sm);transform:translateY(-1px)}
+  .pay-step-num{
+    width:27px;height:27px;border-radius:50%;flex:none;
+    background:var(--grad);color:#fff;font-weight:800;font-size:.78rem;
+    display:grid;place-items:center;
+    box-shadow:0 6px 14px -6px rgba(30,64,175,.5);
+  }
+  .pay-step b{display:block;font-size:.9rem;color:var(--text);line-height:1.35;font-weight:700}
+  .pay-step .desc{display:block;font-size:.8rem;color:var(--muted);margin-top:2px}
+  .pay-step code{
+    font-family:var(--mono);background:#eff6ff;color:var(--primary-deep);
+    padding:1px 7px;border-radius:4px;font-weight:800;letter-spacing:.06em;
+    border:1px solid #bfdbfe;font-size:.88em;
+  }
+
+  .pay-note .pay-steps{gap:8px;margin-top:12px}
+  .pay-note .pay-step{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14);padding:10px 12px}
+  .pay-note .pay-step:hover{border-color:rgba(255,255,255,.32);box-shadow:none;transform:none}
+  .pay-note .pay-step b{color:#fff}
+  .pay-note .pay-step .desc{color:rgba(255,255,255,.78)}
+  .pay-note .pay-step code{background:rgba(0,0,0,.38);color:#fff;border-color:rgba(255,255,255,.4)}
+  .pay-note .pay-step-num{background:#fff;color:#b91c1c;box-shadow:none}
+
+  /* ============ SIGNUP — RED LIVE ============ */
+  .signup{position:relative;padding:clamp(40px,6vw,80px) 0 clamp(56px,8vw,96px);overflow:hidden}
+  .signup::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(55% 55% at 12% 18%, rgba(220,38,38,.10), transparent 60%),radial-gradient(55% 55% at 88% 82%, rgba(220,38,38,.10), transparent 60%)}
+  .signup-shell{position:relative;border-radius:36px;padding:3px;overflow:hidden;isolation:isolate;animation:shellGlow 4.5s ease-in-out infinite}
+  @keyframes shellGlow{0%,100%{box-shadow:0 36px 90px -32px rgba(220,38,38,.45)}50%{box-shadow:0 48px 120px -30px rgba(239,68,68,.7)}}
+  .signup-shell::before{content:"";position:absolute;inset:-60%;z-index:0;background:conic-gradient(from 0deg,#fecaca,#ef4444,#7f1d1d,#ef4444,#fecaca);animation:spin 12s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .signup-card{position:relative;z-index:1;border-radius:33px;overflow:hidden;padding:clamp(32px,5.5vw,64px) clamp(20px,5vw,58px);text-align:center;color:#fff;background:radial-gradient(120% 140% at 50% -20%, rgba(255,255,255,.16), transparent 55%),radial-gradient(100% 120% at 100% 120%, #7f1d1d 0%, transparent 60%),linear-gradient(150deg,#b91c1c 0%,#dc2626 50%,#ef4444 100%)}
+  .signup-orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+  .orb-a{width:300px;height:300px;background:rgba(255,255,255,.22);top:-120px;left:-80px;animation:drift 10s ease-in-out infinite}
+  .orb-b{width:260px;height:260px;background:rgba(127,29,29,.7);bottom:-110px;right:-60px;animation:drift 12s ease-in-out infinite reverse}
+  @keyframes drift{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,20px) scale(1.08)}}
+
+  .live-badge{position:relative;z-index:2;display:inline-flex;align-items:center;gap:10px;padding:8px 18px;border-radius:999px;background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+  .live-badge b{font-variant-numeric:tabular-nums;letter-spacing:.02em}
+  .live-dot{width:9px;height:9px;border-radius:50%;background:#fff;flex:none;animation:livePulse 1.8s infinite}
+  @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.65)}70%{box-shadow:0 0 0 9px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+
+  .signup-card h2{position:relative;z-index:2;font-size:clamp(1.8rem,4.2vw,2.8rem);line-height:1.08;letter-spacing:-.03em;font-weight:800;margin:22px auto 14px;max-width:640px;text-shadow:0 2px 26px rgba(0,0,0,.2)}
+  .signup-card .signup-sub{position:relative;z-index:2;color:rgba(255,255,255,.9);max-width:500px;margin:0 auto 18px;font-size:clamp(.94rem,1.5vw,1.02rem)}
+  .signup-sub .code-inline-dark{
+    font-family:var(--mono);letter-spacing:.12em;background:rgba(255,255,255,.18);color:#fff;
+    padding:2px 10px;border-radius:6px;border:1px dashed rgba(255,255,255,.5);
+    font-weight:800;display:inline-block;font-size:1.05em;white-space:nowrap;
+  }
+
+  .airtel-note{
+    position:relative;z-index:2;
+    display:inline-flex;align-items:center;gap:9px;flex-wrap:wrap;justify-content:center;
+    background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.28);
+    border-radius:999px;padding:6px 14px 6px 8px;
+    font-size:.8rem;font-weight:700;color:#fff;
+    margin-bottom:22px;
+  }
+  .airtel-note .flag{font-size:.95rem;line-height:1}
+
+  .signup-form{position:relative;z-index:2;display:flex;flex-direction:column;gap:12px;max-width:400px;margin-inline:auto}
+  .signup-form input{width:100%;padding:15px 20px;border-radius:12px;border:2px solid transparent;background:#fff;color:#0f172a;font-size:.95rem;outline:none;box-shadow:0 10px 26px -12px rgba(0,0,0,.5);transition:border-color .2s,box-shadow .2s}
+  .signup-form input::placeholder{color:#94a3b8}
+  .signup-form input:focus{border-color:#fecaca;box-shadow:0 0 0 5px rgba(255,255,255,.25)}
+  .signup-btn{position:relative;width:100%;overflow:hidden;padding:16px 30px;border-radius:12px;font-weight:800;font-size:.95rem;background:#fff;color:#b91c1c;box-shadow:0 12px 30px -10px rgba(0,0,0,.45);transition:transform .2s ease,box-shadow .2s ease}
+  .signup-btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(0,0,0,.55)}
+  .signup-btn:active{transform:scale(.98)}
+  .signup-btn::after{content:"";position:absolute;top:0;left:-130%;width:70%;height:100%;background:linear-gradient(100deg,transparent,rgba(220,38,38,.22),transparent);transform:skewX(-18deg);animation:shimmer 3.4s infinite}
+  @keyframes shimmer{0%{left:-130%}55%,100%{left:170%}}
+
+  .signup .form-msg{position:relative;z-index:2;font-size:.86rem;margin-top:14px;min-height:20px;font-weight:600;color:#bbf7d0}
+  .signup .form-msg.err{color:#fecaca}
+
+  .pay-note{
+    position:relative;z-index:2;margin-top:16px;padding:16px;
+    background:rgba(0,0,0,.28);border-radius:14px;
+    border:1px solid rgba(255,255,255,.22);
+    color:rgba(255,255,255,.95);text-align:left;
+  }
+  .pay-note-title{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    color:rgba(255,255,255,.8);margin-bottom:12px;
+  }
+  .pay-note-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+  .pay-note-item{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:9px 12px}
+  .pay-note-item span{display:block;font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.72);margin-bottom:1px}
+  .pay-note-item b{font-size:.95rem;color:#fff;font-weight:800;letter-spacing:.01em}
+
+  .code-display{
+    display:flex;align-items:center;gap:10px;
+    background:rgba(0,0,0,.4);border:1px dashed rgba(255,255,255,.45);
+    border-radius:11px;padding:11px 14px;
+  }
+  .code-label{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.7);font-weight:800;flex:none}
+  .code-value{
+    flex:1;font-family:var(--mono);
+    font-size:clamp(1.15rem,3.6vw,1.4rem);font-weight:800;letter-spacing:.18em;
+    color:#fff;text-align:center;text-shadow:0 0 18px rgba(255,255,255,.3);
+  }
+  .code-copy{
+    padding:6px 13px;border-radius:7px;background:#fff;color:#b91c1c;
+    font-weight:800;font-size:.74rem;letter-spacing:.02em;
+    transition:transform .15s ease,background .15s ease;flex:none;
+  }
+  .code-copy:hover{transform:translateY(-1px);background:#fef2f2}
+  .code-copy:active{transform:scale(.96)}
+  .code-copy.copied{background:#bbf7d0;color:#166534}
+
+  .signup-alt{position:relative;z-index:2;margin-top:16px;font-size:.86rem;color:rgba(255,255,255,.9)}
+  .signup-alt a{color:#fff;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+
+  .signup-trust{position:relative;z-index:2;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 20px;margin-top:20px;font-size:.82rem;color:rgba(255,255,255,.9)}
+  .signup-trust span{display:inline-flex;align-items:center;gap:7px}
+  .signup-trust i{width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;font-style:normal;font-size:.6rem;flex:none}
+
+  /* ================================================================
+     DASHBOARD
+  ================================================================ */
+  .dash-head{
+    display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    padding-top:clamp(32px,5vw,52px);padding-bottom:clamp(22px,3.5vw,32px);
+  }
+  .dash-head h1{font-size:clamp(1.6rem,3.6vw,2.2rem);font-weight:800;letter-spacing:-.025em;margin:8px 0 6px;color:var(--text)}
+  .dash-head p{color:var(--muted);font-size:.94rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .status-active{
+    display:inline-flex;align-items:center;gap:7px;
+    background:var(--accent-soft);color:#065f46;
+    padding:3px 11px;border-radius:999px;font-weight:800;font-size:.78rem;
+  }
+  .status-active::before{
+    content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);
+    box-shadow:0 0 0 3px rgba(5,150,105,.2);animation:pulse 2s infinite;
+  }
+
+  .dash-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;align-items:start}
+
+  .dash-balance-card{
+    position:relative;overflow:hidden;border-radius:26px;
+    padding:clamp(24px,4vw,36px);color:#fff;
+    background:
+      radial-gradient(130% 140% at 0% 0%, rgba(255,255,255,.22), transparent 55%),
+      radial-gradient(120% 130% at 100% 100%, rgba(4,120,87,.85), transparent 60%),
+      linear-gradient(150deg,#1e40af,#0f766e);
+    box-shadow:0 30px 70px -30px rgba(30,64,175,.55);
+  }
+  .dash-live{
+    display:inline-flex;align-items:center;gap:7px;
+    background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.25);
+    padding:5px 12px;border-radius:999px;
+    font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  }
+  .dash-live i{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 0 rgba(74,222,128,.6);animation:pulse 2s infinite}
+  .dash-balance-card small{display:block;margin-top:16px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.8);font-weight:800}
+  .dash-balance{
+    font-size:clamp(2.2rem,6vw,3.2rem);font-weight:800;letter-spacing:-.04em;
+    line-height:1.05;margin:6px 0 4px;font-variant-numeric:tabular-nums;
+  }
+  .dash-balance-sub{font-size:.82rem;color:#bbf7d0;font-weight:700}
+  .dash-mini-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+  .dash-mini-row > div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 12px}
+  .dash-mini-row span{display:block;font-size:.64rem;text-transform:uppercase;letter-spacing:.09em;color:rgba(255,255,255,.78);font-weight:800}
+  .dash-mini-row b{font-size:1rem;font-weight:800;font-variant-numeric:tabular-nums}
+
+  .dash-panel{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);
+    padding:clamp(22px,3.5vw,30px);box-shadow:var(--shadow-sm);
+  }
+  .dash-panel h3{font-size:1.05rem;font-weight:800;margin-bottom:4px;color:var(--text)}
+  .dash-panel .sub{color:var(--muted);font-size:.86rem;margin-bottom:16px}
+
+  .gate-chip{
+    display:inline-flex;align-items:center;gap:7px;
+    background:#eff6ff;border:1px solid #bfdbfe;color:var(--primary-deep);
+    padding:4px 11px;border-radius:999px;font-size:.72rem;font-weight:800;
+    letter-spacing:.04em;margin-bottom:14px;
+  }
+
+  .wd-label{display:block;font-size:.78rem;font-weight:800;color:var(--text-soft);margin-bottom:6px;letter-spacing:.01em}
+  .wd-input{
+    width:100%;padding:13px 16px;border-radius:10px;
+    border:1px solid var(--line-strong);background:#fff;color:var(--text);
+    outline:none;margin-bottom:14px;
+    transition:border-color .2s,box-shadow .2s;
+  }
+  .wd-input::placeholder{color:#94a3b8}
+  .wd-input:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(29,78,216,.1)}
+  select.wd-input{
+    appearance:none;-webkit-appearance:none;cursor:pointer;padding-right:40px;
+    background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2364748b' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 16px center;
+  }
+
+  .activity{list-style:none;display:grid;gap:2px;margin-top:6px}
+  .activity li{
+    display:flex;align-items:center;gap:12px;
+    padding:12px 0;border-bottom:1px solid var(--line);
+  }
+  .activity li:last-child{border-bottom:none}
+  .activity .a-ic{
+    width:34px;height:34px;border-radius:9px;flex:none;
+    display:grid;place-items:center;font-size:.85rem;
+    background:#eff6ff;color:var(--primary);
+  }
+  .activity .a-ic.in{background:var(--accent-soft);color:var(--accent)}
+  .activity .a-ic.out{background:#fef2f2;color:#dc2626}
+  .activity .a-tx{flex:1;min-width:0}
+  .activity .a-tx b{display:block;font-size:.87rem;font-weight:700;color:var(--text)}
+  .activity .a-tx small{font-size:.76rem;color:var(--muted)}
+  .activity .a-amt{font-weight:800;font-size:.9rem;font-variant-numeric:tabular-nums}
+  .activity .a-amt.in{color:var(--accent)}
+  .activity .a-amt.out{color:#dc2626}
+
+  .dash-tasks{display:grid;gap:10px;margin-top:4px}
+  .dash-task{
+    display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+    padding:12px 14px;border-radius:12px;font:inherit;color:inherit;
+    background:var(--bg-soft);border:1px solid var(--line);
+    transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease,opacity .2s ease;
+  }
+  .dash-task:hover{border-color:#93c5fd;transform:translateY(-1px);box-shadow:var(--shadow-sm)}
+  .dash-task:active{transform:scale(.995)}
+  .dash-task .ic{
+    width:36px;height:36px;border-radius:10px;flex:none;
+    display:grid;place-items:center;font-size:.9rem;
+    background:#fff;border:1px solid var(--line);
+  }
+  .dash-task .tx{flex:1;min-width:0}
+  .dash-task .tx b{display:block;font-size:.88rem;font-weight:700;color:var(--text)}
+  .dash-task .tx small{font-size:.76rem;color:var(--muted)}
+  .dash-task .pay{font-weight:800;color:var(--accent);font-size:.88rem;flex:none}
+  .dash-task.done{opacity:.6;cursor:default;transform:none!important;box-shadow:none!important;border-color:var(--line)!important}
+  .dash-task.done .pay{color:var(--muted)}
+
+  /* ============ WATCH & EARN VIDEO ============ */
+  .video-panel .video-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+  .video-panel .video-head h3{margin-bottom:2px}
+  .video-panel .video-head .sub{margin-bottom:0}
+  .video-reward{
+    display:inline-flex;align-items:center;gap:6px;
+    background:var(--accent-soft);color:#065f46;
+    padding:5px 12px;border-radius:999px;font-weight:800;font-size:.8rem;
+    white-space:nowrap;flex:none;border:1px solid #a7f3d0;
+  }
+  .video-reward.earned{background:#fef3c7;color:#92400e;border-color:#fde68a}
+  .video-frame{
+    position:relative;width:100%;aspect-ratio:16/9;
+    background:#000;border-radius:14px;overflow:hidden;
+    border:1px solid var(--line);
+  }
+  .video-frame > div,.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .video-status{
+    margin-top:12px;font-size:.85rem;font-weight:700;
+    padding:9px 14px;border-radius:10px;
+    background:var(--bg-soft);border:1px solid var(--line);color:var(--text-soft);
+    display:flex;align-items:center;gap:8px;
+  }
+  .video-status.playing{background:#eff6ff;border-color:#bfdbfe;color:var(--primary-deep)}
+  .video-status.paused{background:#fef3c7;border-color:#fde68a;color:#92400e}
+  .video-status.earned{background:var(--accent-soft);border-color:#a7f3d0;color:#065f46}
+
+  /* ============ FOOTER ============ */
+  footer{border-top:1px solid var(--line);padding:52px 0 30px;background:var(--bg-soft)}
+  .foot-grid{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:36px}
+  .foot-brand p{color:var(--muted);font-size:.88rem;margin-top:14px;max-width:280px}
+  .foot-col h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--text);margin-bottom:16px;font-weight:700}
+  .foot-col a{display:block;color:var(--muted);font-size:.88rem;padding:6px 0;transition:color .2s}
+  .foot-col a:hover{color:var(--primary)}
+  .foot-bottom{margin-top:40px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
+  .foot-bottom .powered{display:inline-flex;align-items:center;gap:6px;font-weight:600;color:var(--text-soft)}
+  .foot-bottom .powered b{color:var(--primary);font-weight:800}
+  .socials{display:flex;gap:10px}
+  .socials a{width:34px;height:34px;border-radius:8px;border:1px solid var(--line);background:#fff;display:grid;place-items:center;color:var(--muted);transition:.2s}
+  .socials a:hover{color:var(--primary);border-color:#93c5fd;background:#eff6ff}
+  .socials svg{width:16px;height:16px}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .phone{animation:none}
+    .page.active{animation:none}
+    .signup-shell,.signup-shell::before,.orb-a,.orb-b,.live-dot,.signup-btn::after{animation:none}
+    html{scroll-behavior:auto}
+  }
+
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:48px}
+    .hero-sub{max-width:none}
+    .phone-wrap{order:2}
+    .contact-grid{grid-template-columns:1fr}
+    .dash-grid{grid-template-columns:1fr}
+    .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
+    .foot-brand{grid-column:1/-1}
+  }
+  @media (max-width:820px){
+    .nav-links,.nav-cta .btn-ghost{display:none}
+    .burger{display:grid}
+    .strip-inner{grid-template-columns:1fr 1fr;gap:26px}
+  }
+  @media (max-width:600px){
+    .container{padding-inline:18px}
+    .hero-actions{flex-direction:column;align-items:stretch}
+    .hero-actions .btn{width:100%}
+    .signup-form{max-width:100%}
+    .foot-grid{grid-template-columns:1fr}
+    .foot-bottom{flex-direction:column;align-items:flex-start}
+    .pay-note-grid{grid-template-columns:1fr}
+    .code-display{flex-wrap:wrap;justify-content:center;gap:8px}
+    .code-label{width:100%;text-align:center}
+    .code-value{flex-basis:100%;text-align:center}
+    .code-copy{width:100%}
+    .dash-mini-row{grid-template-columns:1fr}
+    .pay-note-title{justify-content:center}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#/home" class="logo" aria-label="Mobilearn home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-6 4 3 5-7 4 4"/></svg>
+        </span>
+        Mobilearn
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#/home" data-nav>Home</a>
+        <a href="#/how" data-nav>How it works</a>
+        <a href="#/dashboard" data-nav id="navDashboard" style="display:none">Dashboard</a>
+        <a href="#/about" data-nav>About</a>
+        <a href="#/contact" data-nav>Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#/login" class="btn btn-ghost">Log in</a>
+        <a href="#/signup" class="btn btn-primary">Get started</a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span></button>
+      </div>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#/home" data-nav>Home</a>
+    <a href="#/how" data-nav>How it works</a>
+    <a href="#/dashboard" data-nav id="mobileDashboard" style="display:none">Dashboard</a>
+    <a href="#/about" data-nav>About</a>
+    <a href="#/contact" data-nav>Contact</a>
+    <a href="#/signup" class="btn btn-primary btn-block">Get started</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================================================================
+       PAGE: HOME
+  ================================================================ -->
+  <section class="page" data-page="home">
+
+    <div class="hero">
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div class="glow glow-3"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="pill">
+              <span class="pill-dot">⚡</span>
+              <span><span class="pill-live"></span> <b>1,284 payouts</b> in the last 24h</span>
+            </div>
+            <h1>Learn. Earn.<br><span class="grad-text">Get paid</span> online.</h1>
+            <p class="hero-sub">Watch YouTube videos for $0.50 each, do simple tasks and short courses. Paid from $5 — straight to your phone.</p>
+            <div class="hero-actions">
+              <a href="#/signup" class="btn btn-primary">
+                Create account
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a href="#/how" class="btn btn-ghost">How it works</a>
+            </div>
+            <div class="hero-trust">
+              <span><i class="check">✓</i> YouTube &amp; tasks</span>
+              <span><i class="check">✓</i> UGX 19,500 activation</span>
+              <span><i class="check">✓</i> Airtel Uganda only</span>
+            </div>
+          </div>
+
+          <div class="phone-wrap">
+            <div class="phone" role="img" aria-label="Mobilearn app preview showing balance and paid tasks including watching YouTube videos">
+              <div class="phone-screen">
+                <div class="notch"></div>
+                <div class="ph-head">
+                  <div style="display:flex;align-items:center;gap:9px">
+                    <div class="ph-avatar">AK</div>
+                    <div class="ph-hi">Welcome back<b>Amara K.</b></div>
+                  </div>
+                  <div style="font-size:.9rem;color:#94a3b8">🔔</div>
+                </div>
+                <div class="ph-balance">
+                  <small>Available balance</small>
+                  <div class="amt">$1,248.50</div>
+                  <div class="chg">▲ +$42.30 this week</div>
+                  <div class="ph-chart" aria-hidden="true">
+                    <i style="height:38%"></i><i style="height:62%"></i><i style="height:46%"></i>
+                    <i style="height:78%"></i><i style="height:58%"></i><i style="height:92%"></i><i style="height:70%"></i>
+                  </div>
+                </div>
+                <div class="ph-label">Today's tasks</div>
+                <div class="ph-task">
+                  <div class="ic yt">▶</div>
+                  <div class="tx"><b>Watch YouTube video</b><small>Full video · Video</small></div>
+                  <div class="pay">+$0.50</div>
+                </div>
+                <div class="ph-task">
+                  <div class="ic">📝</div>
+                  <div class="tx"><b>Product review survey</b><small>4 min · Verified</small></div>
+                  <div class="pay">+$3.20</div>
+                </div>
+                <div class="ph-task">
+                  <div class="ic">🎓</div>
+                  <div class="tx"><b>SEO basics — Lesson 3</b><small>12 min · Course</small></div>
+                  <div class="pay">+$6.50</div>
+                </div>
+                <div class="ph-bar"><div class="active">Home</div><div>Tasks</div><div>Learn</div><div>Wallet</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="strip">
+      <div class="container">
+        <div class="strip-inner">
+          <div class="reveal"><div class="strip-num grad-text">180K+</div><div class="strip-lbl">Active members</div></div>
+          <div class="reveal"><div class="strip-num grad-text">$4.2M</div><div class="strip-lbl">Paid out</div></div>
+          <div class="reveal"><div class="strip-num grad-text">4.8/5</div><div class="strip-lbl">Avg rating</div></div>
+          <div class="reveal"><div class="strip-num grad-text">120+</div><div class="strip-lbl">Countries</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Three steps. First payout fast.</h2>
+          <p>No interviews. No capital. Just a phone.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="step-num">1</div>
+            <h3>Create account</h3>
+            <p>Username, Airtel number and password. Activate for UGX 19,500.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">2</div>
+            <h3>Watch &amp; earn</h3>
+            <p>YouTube videos for $0.50 each, surveys, courses and micro-tasks.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">3</div>
+            <h3>Withdraw</h3>
+            <p>Bank, mobile money, PayPal, crypto. From $5.</p>
+          </article>
+        </div>
+        <div class="hero-actions" style="justify-content:center;margin-top:36px">
+          <a href="#/how" class="btn btn-ghost">See full details</a>
+          <a href="#/signup" class="btn btn-primary">Create free account</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" style="padding-top:0">
+      <div class="container">
+        <div class="home-cta reveal">
+          <h2>Ready to start earning?</h2>
+          <p>Create your account in 60 seconds. Activate with UGX 19,500 via Airtel Merchant Code <b style="color:var(--primary);font-family:var(--mono);letter-spacing:.08em">7285061</b>.</p>
+          <div class="hero-actions">
+            <a href="#/signup" class="btn btn-primary">Create account</a>
+            <a href="#/contact" class="btn btn-ghost">Talk to support</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================================================================
+       PAGE: HOW IT WORKS
+  ================================================================ -->
+  <section class="page" data-page="how">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">How it works</span>
+        <h1>From signup to payout</h1>
+        <p>Account, activation payment, work and withdrawals — step by step.</p>
+      </div>
+
+      <div class="section">
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="step-num">1</div>
+            <h3>Create your account</h3>
+            <p>Enter a username, Airtel Uganda number and password. Takes under a minute and costs nothing.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">2</div>
+            <h3>Activate it</h3>
+            <p>Pay UGX 19,500 via Airtel <b style="font-family:var(--mono)">*185*9#</b> with merchant code <span class="code-inline">7285061</span>.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">3</div>
+            <h3>Watch, work &amp; withdraw</h3>
+            <p>Earn from YouTube videos and tasks, then withdraw from $5 inside your dashboard.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0">
+        <div class="grid-2">
+
+          <div class="panel panel-accent reveal">
+            <div class="pay-note-title" style="color:var(--muted);justify-content:space-between">
+              <h3 style="margin:0">Activate — UGX 19,500</h3>
+              <span class="airtel-logo">
+                <span class="airtel-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9c0-4-3.2-7.2-7.2-7.2-3.1 0-5.6 2.5-5.6 5.6 0 2.5 2 4.6 4.6 4.6 2 0 3.7-1.7 3.7-3.7" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+                  </svg>
+                  <span class="word">airtel</span>
+                </span>
+              </span>
+            </div>
+            <p>One-time activation fee, paid through Airtel Money. Airtel Uganda numbers only.</p>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px">
+              <div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:10px 14px">
+                <div style="font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800">Activation Fee</div>
+                <div style="font-weight:800;color:var(--primary-deep);font-size:1rem;margin-top:2px">UGX 19,500</div>
+              </div>
+              <div style="background:#fff;border:1px solid #bfdbfe;border-radius:10px;padding:10px 14px">
+                <div style="font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800">Merchant Name</div>
+                <div style="font-weight:800;color:var(--primary-deep);font-size:1rem;margin-top:2px">MOBILE LABS</div>
+              </div>
+            </div>
+
+            <div style="background:#fff;border:1px dashed #93c5fd;border-radius:10px;padding:12px 14px;margin-top:10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+              <span style="font-size:.64rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:800;flex:none">Merchant Code</span>
+              <span style="font-family:var(--mono);font-size:1.5rem;font-weight:800;letter-spacing:.16em;color:var(--primary-deep);flex:1;text-align:center">7285061</span>
+              <button type="button" class="code-copy" data-copy="7285061" style="background:var(--primary);color:#fff">Copy</button>
+            </div>
+
+            <div class="pay-steps">
+              <div class="pay-step">
+                <span class="pay-step-num">1</span>
+                <div><b>Dial <code>*185*9#</code></b><span class="desc">Opens Airtel Money on your phone</span></div>
+              </div>
+              <div class="pay-step">
+                <span class="pay-step-num">2</span>
+                <div><b>Enter merchant code <code>7285061</code></b><span class="desc">Choose “Pay Bill → Merchant Code”</span></div>
+              </div>
+              <div class="pay-step">
+                <span class="pay-step-num">3</span>
+                <div><b>Confirm name <code>MOBILE LABS</code></b><span class="desc">Check the merchant name shown on screen</span></div>
+              </div>
+              <div class="pay-step">
+                <span class="pay-step-num">4</span>
+                <div><b>Enter amount <code>UGX 19,500</code></b><span class="desc">Type the exact activation fee</span></div>
+              </div>
+              <div class="pay-step">
+                <span class="pay-step-num">5</span>
+                <div><b>Enter PIN &amp; confirm</b><span class="desc">Keep the confirmation SMS — your account activates automatically</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h3>Withdraw — from $5</h3>
+            <p>Withdrawals are gated by merchant code for your security.</p>
+
+            <div class="pay-steps">
+              <div class="pay-step">
+                <span class="pay-step-num">1</span>
+                <div><b>Gate 1 — enter merchant code <code>7285061</code></b><span class="desc">Unlocks the withdrawal form in your dashboard</span></div>
+              </div>
+              <div class="pay-step">
+                <span class="pay-step-num">2</span>
+                <div><b>Enter amount</b><span class="desc">Minimum $5 · up to your available balance</span></div>
+              </div>
+              <div class="pay-step">
+                <span class="pay-step-num">3</span>
+                <div><b>Choose payout method</b><span class="desc">Airtel Money, MTN, bank transfer, PayPal or crypto</span></div>
+              </div>
+              <div class="pay-step">
+                <span class="pay-step-num">4</span>
+                <div><b>Confirm withdrawal</b><span class="desc">Most payouts land within 24 hours</span></div>
+              </div>
+            </div>
+
+            <ul class="list" style="margin-top:18px">
+              <li><span class="tick">✓</span><span><b>Bank transfer</b> to your local account</span></li>
+              <li><span class="tick">✓</span><span><b>Mobile money</b> — Airtel, MTN and others</span></li>
+              <li><span class="tick">✓</span><span><b>PayPal</b> for international payouts</span></li>
+              <li><span class="tick">✓</span><span><b>Crypto</b> in major coins</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0">
+        <div class="section-head reveal" style="margin-bottom:26px">
+          <span class="eyebrow">Ways to earn</span>
+          <h2>Four ways to make money</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card reveal">
+            <div class="step-num" style="background:linear-gradient(135deg,#dc2626,#ef4444)">▶</div>
+            <h3>Watch YouTube videos</h3>
+            <p>Watch the sponsored video to the end in your dashboard — earn <b>$0.50</b> per completed video.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">📝</div>
+            <h3>Surveys &amp; reviews</h3>
+            <p>Answer short surveys and product reviews. Pay shown before you start.</p>
+          </article>
+          <article class="card reveal">
+            <div class="step-num">🎓</div>
+            <h3>Skill courses</h3>
+            <p>Learn freelancing, marketing or AI tools — and get paid for finishing modules.</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="section" style="padding-top:0;text-align:center">
+        <a href="#/signup" class="btn btn-primary">Create account</a>
+        <a href="#/login" class="btn btn-ghost" style="margin-left:10px">Log in to dashboard</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: CREATE ACCOUNT (RED LIVE)
+  ================================================================ -->
+  <section class="page" data-page="signup">
+    <div class="signup">
+      <div class="container">
+        <div class="signup-shell reveal">
+          <div class="signup-card">
+            <div class="signup-orb orb-a" aria-hidden="true"></div>
+            <div class="signup-orb orb-b" aria-hidden="true"></div>
+
+            <div class="live-badge">
+              <span class="live-dot" aria-hidden="true"></span>
+              Live · <b id="liveCount">1,847</b>&nbsp;members online
+            </div>
+
+            <h2>Create your account</h2>
+            <p class="signup-sub">
+              Username, Airtel number and password. Activate for UGX 19,500 via Airtel Merchant Code <span class="code-inline-dark">7285061</span> to MOBILE LABS.
+            </p>
+
+            <div class="airtel-note">
+              <span class="flag">🇺🇬</span>
+              <span>Sign up with an Airtel Uganda number only</span>
+              <span class="airtel-logo on-dark">
+                <span class="airtel-badge">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9c0-4-3.2-7.2-7.2-7.2-3.1 0-5.6 2.5-5.6 5.6 0 2.5 2 4.6 4.6 4.6 2 0 3.7-1.7 3.7-3.7" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+                  </svg>
+                  <span class="word">airtel</span>
+                </span>
+              </span>
+            </div>
+
+            <form class="signup-form" id="signup" novalidate>
+              <input type="text" id="username" name="username" placeholder="Username" aria-label="Username" autocomplete="username" required />
+              <input type="tel" id="phone" name="phone" placeholder="Airtel number (e.g. 070 / 074 / 075 / 076 …)" aria-label="Airtel Uganda phone number" inputmode="tel" autocomplete="tel" required />
+              <input type="password" id="password" name="password" placeholder="Password" aria-label="Password" autocomplete="new-password" required />
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" aria-label="Confirm password" autocomplete="new-password" required />
+              <button type="submit" class="signup-btn">Create account</button>
+            </form>
+            <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+
+            <div class="pay-note">
+              <div class="pay-note-title">
+                <span>Activation Payment</span>
+                <span class="airtel-logo">
+                  <span class="airtel-badge">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9c0-4-3.2-7.2-7.2-7.2-3.1 0-5.6 2.5-5.6 5.6 0 2.5 2 4.6 4.6 4.6 2 0 3.7-1.7 3.7-3.7" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+                    </svg>
+                    <span class="word">airtel money</span>
+                  </span>
+                </span>
+              </div>
+              <div class="pay-note-grid">
+                <div class="pay-note-item">
+                  <span>Fee</span>
+                  <b>UGX 19,500</b>
+                </div>
+                <div class="pay-note-item">
+                  <span>Merchant Name</span>
+                  <b>MOBILE LABS</b>
+                </div>
+              </div>
+              <div class="code-display">
+                <span class="code-label">Merchant Code</span>
+                <span class="code-value">7285061</span>
+                <button type="button" class="code-copy" data-copy="7285061">Copy</button>
+              </div>
+
+              <div class="pay-steps">
+                <div class="pay-step">
+                  <span class="pay-step-num">1</span>
+                  <div><b>Dial <code>*185*9#</code></b></div>
+                </div>
+                <div class="pay-step">
+                  <span class="pay-step-num">2</span>
+                  <div><b>Enter merchant code <code>7285061</code></b></div>
+                </div>
+                <div class="pay-step">
+                  <span class="pay-step-num">3</span>
+                  <div><b>Confirm <code>MOBILE LABS</code> · pay <code>UGX 19,500</code></b></div>
+                </div>
+                <div class="pay-step">
+                  <span class="pay-step-num">4</span>
+                  <div><b>Enter PIN to approve</b></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="signup-alt">Already have an account? <a href="#/login">Log in</a></div>
+
+            <div class="signup-trust">
+              <span><i>✓</i> Airtel Uganda only</span>
+              <span><i>✓</i> Watch YouTube &amp; earn $0.50</span>
+              <span><i>✓</i> Withdraw from $5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: LOG IN
+  ================================================================ -->
+  <section class="page" data-page="login">
+    <div class="section">
+      <div class="container">
+        <div class="auth-wrap">
+          <div class="auth-card reveal">
+            <h1>Welcome back</h1>
+            <p class="sub">Log in with your username or Airtel number. Your dashboard unlocks once the admin authorizes your account.</p>
+            <form class="form-stack" id="login" novalidate>
+              <input type="text" id="loginId" placeholder="Username or Airtel number" aria-label="Username or Airtel number" autocomplete="username" required />
+              <input type="password" id="loginPass" placeholder="Password" aria-label="Password" autocomplete="current-password" required />
+              <button type="submit" class="btn btn-primary btn-block">Log in</button>
+            </form>
+            <div class="auth-msg" id="loginMsg" role="status" aria-live="polite"></div>
+            <div class="auth-alt">New here? <a href="#/signup">Create an account</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: DASHBOARD (authorized users)
+  ================================================================ -->
+  <section class="page" data-page="dashboard">
+    <div class="container">
+
+      <div class="dash-head">
+        <div>
+          <span class="eyebrow">Dashboard</span>
+          <h1>Welcome back, <span id="dashUser">Amara</span></h1>
+          <p>
+            <span class="status-active">Authorized</span>
+            Account approved by admin · Balance updates live
+          </p>
+        </div>
+        <button type="button" class="btn btn-ghost" id="logoutBtn">Log out</button>
+      </div>
+
+      <div class="dash-grid">
+
+        <!-- BALANCE + VIDEO + TASKS -->
+        <div>
+          <div class="dash-balance-card">
+            <span class="dash-live"><i></i> Live earnings</span>
+            <small>Available balance</small>
+            <div class="dash-balance" id="dashBalance">$0.00</div>
+            <div class="dash-balance-sub">▲ Balance rising as tasks complete</div>
+
+            <div class="dash-mini-row">
+              <div><span>Today</span><b id="dashToday">$0.00</b></div>
+              <div><span>This week</span><b id="dashWeek">$0.00</b></div>
+              <div><span>Total earned</span><b id="dashTotal">$0.00</b></div>
+            </div>
+          </div>
+
+          <!-- WATCH & EARN — YOUTUBE -->
+          <div class="dash-panel video-panel" style="margin-top:22px">
+            <div class="video-head">
+              <div>
+                <h3>Watch &amp; Earn</h3>
+                <p class="sub">Watch the sponsored video to the end to earn $0.50.</p>
+              </div>
+              <span class="video-reward" id="videoRewardBadge">+$0.50</span>
+            </div>
+            <div class="video-frame">
+              <div id="ytPlayer"></div>
+            </div>
+            <div class="video-status" id="videoStatus">▶ Press play and watch to the end to earn $0.50.</div>
+          </div>
+
+          <!-- TASKS -->
+          <div class="dash-panel" style="margin-top:22px">
+            <h3>Today's tasks</h3>
+            <p class="sub">Tap any task to complete it — earnings are added instantly.</p>
+            <div class="dash-tasks" id="dashTasks">
+              <button type="button" class="dash-task" data-pay="3.20" data-title="Product review survey">
+                <div class="ic">📝</div>
+                <div class="tx"><b>Product review survey</b><small>4 min · Verified</small></div>
+                <div class="pay">+$3.20</div>
+              </button>
+              <button type="button" class="dash-task" data-pay="6.50" data-title="SEO basics — Lesson 3">
+                <div class="ic">🎓</div>
+                <div class="tx"><b>SEO basics — Lesson 3</b><small>12 min · Course</small></div>
+                <div class="pay">+$6.50</div>
+              </button>
+              <button type="button" class="dash-task" data-pay="2.10" data-title="Tagged 20 images">
+                <div class="ic">🖼️</div>
+                <div class="tx"><b>Tag 20 images</b><small>6 min · Micro-task</small></div>
+                <div class="pay">+$2.10</div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- WITHDRAW + ACTIVITY -->
+        <div>
+          <div class="dash-panel">
+            <h3>Withdraw funds</h3>
+            <p class="sub">Withdrawals are gated by merchant code for security.</p>
+
+            <span class="gate-chip">🔒 Gate 1 · Merchant code required</span>
+
+            <form id="withdrawForm" novalidate>
+              <label class="wd-label" for="wdCode">Merchant code</label>
+              <input id="wdCode" class="wd-input" type="text" inputmode="numeric" placeholder="Enter 7285061" autocomplete="off" />
+
+              <label class="wd-label" for="wdAmount">Amount (USD · min $5)</label>
+              <input id="wdAmount" class="wd-input" type="number" min="5" step="0.01" placeholder="e.g. 10" />
+
+              <label class="wd-label" for="wdMethod">Payout method</label>
+              <select id="wdMethod" class="wd-input">
+                <option value="Airtel Money">Airtel Money</option>
+                <option value="MTN Mobile Money">MTN Mobile Money</option>
+                <option value="Bank transfer">Bank transfer</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Crypto">Crypto</option>
+              </select>
+
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top:2px">Withdraw</button>
+            </form>
+            <div class="auth-msg" id="wdMsg" role="status" aria-live="polite"></div>
+          </div>
+
+          <div class="dash-panel" style="margin-top:22px">
+            <h3>Recent activity</h3>
+            <p class="sub">Your latest earnings and withdrawals.</p>
+            <ul class="activity" id="activityList">
+              <li>
+                <div class="a-ic in">＋</div>
+                <div class="a-tx"><b>Task completed</b><small>Product review survey</small></div>
+                <div class="a-amt in">+$3.20</div>
+              </li>
+              <li>
+                <div class="a-ic in">＋</div>
+                <div class="a-tx"><b>Course completed</b><small>SEO basics — Lesson 3</small></div>
+                <div class="a-amt in">+$6.50</div>
+              </li>
+              <li>
+                <div class="a-ic in">＋</div>
+                <div class="a-tx"><b>Task completed</b><small>Tag 20 images</small></div>
+                <div class="a-amt in">+$2.10</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="height:clamp(40px,6vw,72px)"></div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: ABOUT
+  ================================================================ -->
+  <section class="page" data-page="about">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">About us</span>
+        <h1>Built for everyday earners</h1>
+        <p>Mobilearn is operated by Mobilelabs UG — a Ugandan company connecting people to simple, paid online work.</p>
+      </div>
+
+      <div class="section">
+        <div class="grid-2">
+          <div class="panel reveal">
+            <h3>Our mission</h3>
+            <p>Give anyone with an Airtel phone a fair way to earn. No CVs, no interviews, no capital — just YouTube videos, simple tasks and short courses that pay.</p>
+          </div>
+          <div class="panel reveal">
+            <h3>How we work</h3>
+            <p>We partner with verified task providers and pay our members directly. Every task shows its pay rate before you start, and every payout is tracked in your dashboard.</p>
+          </div>
+        </div>
+
+        <div class="strip reveal" style="margin-top:22px;border:1px solid var(--line);border-radius:var(--radius-lg);background:#fff">
+          <div class="strip-inner">
+            <div><div class="strip-num grad-text">180K+</div><div class="strip-lbl">Members</div></div>
+            <div><div class="strip-num grad-text">$4.2M</div><div class="strip-lbl">Paid out</div></div>
+            <div><div class="strip-num grad-text">120+</div><div class="strip-lbl">Countries</div></div>
+            <div><div class="strip-num grad-text">4.8/5</div><div class="strip-lbl">Rating</div></div>
+          </div>
+        </div>
+
+        <div class="hero-actions" style="justify-content:center;margin-top:34px">
+          <a href="#/signup" class="btn btn-primary">Create account</a>
+          <a href="#/contact" class="btn btn-ghost">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: CONTACT
+  ================================================================ -->
+  <section class="page" data-page="contact">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">Contact</span>
+        <h1>We're here to help</h1>
+        <p>Questions about activation, tasks or withdrawals? Reach out.</p>
+      </div>
+
+      <div class="section">
+        <div class="contact-grid">
+          <div class="panel reveal">
+            <h3>Support</h3>
+            <div class="contact-item">
+              <div class="ic">✉️</div>
+              <div><b>Email</b><span>support@mobilelabs.ug</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="ic">📞</div>
+              <div><b>Phone / WhatsApp</b><span>+256 700 000 000</span></div>
+            </div>
+            <div class="contact-item">
+              <div class="ic">💳</div>
+              <div>
+                <b>Activation payments — Airtel Money</b>
+                <span style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:6px">
+                  <span class="airtel-logo">
+                    <span class="airtel-badge">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3C7 3 3 7 3 12s4 9 9 9 9-4 9-9c0-4-3.2-7.2-7.2-7.2-3.1 0-5.6 2.5-5.6 5.6 0 2.5 2 4.6 4.6 4.6 2 0 3.7-1.7 3.7-3.7" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+                      </svg>
+                      <span class="word">airtel</span>
+                    </span>
+                  </span>
+                  <span>Dial <b style="font-family:var(--mono)">*185*9#</b> · Code <b style="font-family:var(--mono);letter-spacing:.08em;color:var(--primary-deep)">7285061</b> · MOBILE LABS</span>
+                </span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ic">🕒</div>
+              <div><b>Hours</b><span>Mon–Sat, 8:00am – 8:00pm EAT</span></div>
+            </div>
+          </div>
+
+          <div class="panel reveal">
+            <h3>Send a message</h3>
+            <form class="form-stack" id="contactForm" novalidate>
+              <input type="text" id="cName" placeholder="Your name" aria-label="Your name" required />
+              <input type="email" id="cEmail" placeholder="Your email" aria-label="Your email" required />
+              <textarea id="cMsg" placeholder="How can we help?" aria-label="Message" required></textarea>
+              <button type="submit" class="btn btn-primary btn-block">Send message</button>
+            </form>
+            <div class="auth-msg" id="contactMsg" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       PAGE: LEGAL
+  ================================================================ -->
+  <section class="page" data-page="legal">
+    <div class="container">
+      <div class="page-head">
+        <span class="eyebrow">Legal</span>
+        <h1>Terms, privacy &amp; payouts</h1>
+        <p>Short, plain-language summaries of how Mobilearn works.</p>
+      </div>
+
+      <div class="section" style="max-width:800px;margin-inline:auto">
+        <div class="panel">
+          <div class="legal-block">
+            <h2>Terms of service</h2>
+            <p>Mobilearn is a platform operated by Mobilelabs UG for paid online tasks, YouTube video rewards and skill courses. Accounts are personal and may not be shared. <b>Signup is limited to Airtel Uganda mobile numbers.</b> One-time activation is UGX 19,500 via Airtel <b style="font-family:var(--mono)">*185*9#</b> using Merchant Code <b style="font-family:var(--mono);letter-spacing:.08em">7285061</b> (MOBILE LABS). YouTube video rewards are paid once per video per account. Misuse, fake submissions or duplicate accounts may result in suspension.</p>
+          </div>
+          <div class="legal-block">
+            <h2>Privacy policy</h2>
+            <p>We collect only what's needed to run your account: username, Airtel phone number and password. We never sell your data. Phone numbers are used for verification and support only.</p>
+          </div>
+          <div class="legal-block">
+            <h2>Payout policy</h2>
+            <p>Withdrawals are available from $5 to bank, mobile money, PayPal or crypto. Withdrawals are gated by Merchant Code <b style="font-family:var(--mono);letter-spacing:.08em">7285061</b> for security. Most payouts are processed within 24 hours. Earnings vary by task availability, quality score and region.</p>
+          </div>
+        </div>
+
+        <div class="hero-actions" style="justify-content:center;margin-top:30px">
+          <a href="#/signup" class="btn btn-primary">Create account</a>
+          <a href="#/contact" class="btn btn-ghost">Ask a question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#/home" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-6 4 3 5-7 4 4"/></svg>
+          </span>
+          Mobilearn
+        </a>
+        <p>Learn. Earn. Get paid from anywhere.</p>
+        <div class="socials" style="margin-top:18px">
+          <a href="#/contact" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7 8 8.2 12h-6.4l-5-7.3L5.9 22H2.8l7.5-8.6L2.4 2h6.6l4.5 6.6L18.9 2zm-1.1 18h1.7L7.3 3.8H5.5L17.8 20z"/></svg></a>
+          <a href="#/contact" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#/contact" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.45-5.17a3 3 0 00-2.11-2.12C18.77 4.25 12 4.25 12 4.25s-6.77 0-8.44.46A3 3 0 001.45 6.8C1 8.5 1 12 1 12s0 3.5.45 5.17a3 3 0 002.11 2.12c1.67.46 8.44.46 8.44.46s6.77 0 8.44-.46a3 3 0 002.11-2.12C23 15.5 23 12 23 12zM9.75 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Platform</h4>
+        <a href="#/home">Home</a>
+        <a href="#/how">How it works</a>
+        <a href="#/signup">Create account</a>
+        <a href="#/login">Log in</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="#/about">About</a>
+        <a href="#/contact">Contact</a>
+        <a href="#/contact">Support</a>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <a href="#/legal">Terms</a>
+        <a href="#/legal">Privacy</a>
+        <a href="#/legal">Payout policy</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2025</span> Mobilearn. All rights reserved.</span>
+      <span class="powered">Powered by <b>Mobilelabs UG</b></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  const MERCHANT_CODE = "7285061";
+  const ACTIVATION_FEE = "UGX 19,500";
+  const AIRTEL_UG = /^(\+?256|0)(70|74|75|76)\d{7}$/;
+
+  const YT_VIDEO_ID = "AWOXpzQzkp8";
+  const VIDEO_REWARD = 0.50;
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------- Sticky nav ---------- */
+  const nav = document.getElementById("nav");
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  /* ---------- Mobile menu ---------- */
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("mobileMenu");
+  burger.addEventListener("click", () => {
+    const open = burger.getAttribute("aria-expanded") === "true";
+    burger.setAttribute("aria-expanded", String(!open));
+    burger.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+    menu.classList.toggle("open", !open);
+  });
+  function closeMenu() {
+    menu.classList.remove("open");
+    burger.setAttribute("aria-expanded", "false");
+    burger.setAttribute("aria-label", "Open menu");
+  }
+  menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
+
+  /* ================================================================
+     AUTH STATE
+  ================================================================ */
+  let authorized = false;
+  let displayName = "Amara";
+
+  const navDashboard = document.getElementById("navDashboard");
+  const mobileDashboard = document.getElementById("mobileDashboard");
+
+  function setAuthorized(value, name) {
+    authorized = value;
+    if (name) displayName = name;
+    navDashboard.style.display = value ? "" : "none";
+    mobileDashboard.style.display = value ? "" : "none";
+    const el = document.getElementById("dashUser");
+    if (el) el.textContent = displayName;
+    if (value) startTicker(); else stopTicker();
+  }
+
+  /* ================================================================
+     ROUTER
+  ================================================================ */
+  const pages = document.querySelectorAll(".page");
+  const routes = ["home", "how", "signup", "login", "dashboard", "about", "contact", "legal"];
+  const titles = {
+    home: "Mobilearn — Get Paid Online",
+    how: "How it works",
+    signup: "Create account",
+    login: "Log in",
+    dashboard: "Dashboard",
+    about: "About",
+    contact: "Contact",
+    legal: "Terms, Privacy & Payouts"
+  };
+
+  if (!location.hash) history.replaceState(null, "", "#/home");
+
+  function currentRoute() {
+    const raw = location.hash.replace(/^#\/?/, "").split("?")[0];
+    return routes.includes(raw) ? raw : "home";
+  }
+
+  function render() {
+    const route = currentRoute();
+
+    if (route === "dashboard" && !authorized) {
+      location.hash = "#/login";
+      return;
+    }
+
+    pages.forEach((page) => {
+      page.classList.toggle("active", page.dataset.page === route);
+    });
+
+    document.querySelectorAll("[data-nav]").forEach((link) => {
+      link.classList.toggle("active", link.getAttribute("href") === "#/" + route);
+    });
+
+    document.title = titles[route] + " — Mobilearn | Powered by Mobilelabs UG";
+
+    const root = document.documentElement;
+    const prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    root.style.scrollBehavior = prev;
+
+    closeMenu();
+    initReveals();
+
+    if (route === "dashboard") {
+      paintDash();
+      ensureVideoPlayer();
+    }
+  }
+
+  window.addEventListener("hashchange", render);
+
+  /* ---------- Scroll reveal ---------- */
+  let observer = null;
+  function initReveals() {
+    const reveals = document.querySelectorAll(".page.active .reveal:not(.in)");
+    if (!("IntersectionObserver" in window)) {
+      reveals.forEach((el) => el.classList.add("in"));
+      return;
+    }
+    if (!observer) {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              const delay = (entry.target.dataset.delay || (i * 70)) % 350;
+              setTimeout(() => entry.target.classList.add("in"), delay);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      );
+    }
+    reveals.forEach((el) => observer.observe(el));
+  }
+
+  /* ---------- Live member counter ---------- */
+  const liveCount = document.getElementById("liveCount");
+  let members = 1847;
+  if (liveCount && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    setInterval(() => {
+      members += Math.random() > 0.25 ? Math.floor(Math.random() * 4) + 1 : -(Math.floor(Math.random() * 2) + 1);
+      liveCount.textContent = members.toLocaleString("en-US");
+    }, 4200);
+  }
+
+  /* ---------- Copy merchant code ---------- */
+  document.querySelectorAll("[data-copy]").forEach((btn) => {
+    btn.addEventListener("click", async (e) => {
+      e.preventDefault();
+      const code = btn.getAttribute("data-copy");
+      const original = btn.textContent;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(code);
+        } else {
+          const tmp = document.createElement("textarea");
+          tmp.value = code;
+          tmp.setAttribute("readonly", "");
+          tmp.style.position = "absolute";
+          tmp.style.left = "-9999px";
+          document.body.appendChild(tmp);
+          tmp.select();
+          document.execCommand("copy");
+          document.body.removeChild(tmp);
+        }
+        btn.textContent = "Copied!";
+        btn.classList.add("copied");
+        setTimeout(() => { btn.textContent = original; btn.classList.remove("copied"); }, 1600);
+      } catch (err) {
+        btn.textContent = "Press Ctrl+C";
+        setTimeout(() => (btn.textContent = original), 1600);
+      }
+    });
+  });
+
+  /* ================================================================
+     DASHBOARD — BALANCE
+  ================================================================ */
+  let balance = 1248.50;
+  let todayEarn = 42.30;
+  let weekEarn = 210.15;
+  let totalEarn = 1248.50;
+  let ticker = null;
+
+  const fmt = (n) => "$" + n.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  function paintDash() {
+    const b = document.getElementById("dashBalance");
+    if (!b) return;
+    b.textContent = fmt(balance);
+    document.getElementById("dashToday").textContent = fmt(todayEarn);
+    document.getElementById("dashWeek").textContent = fmt(weekEarn);
+    document.getElementById("dashTotal").textContent = fmt(totalEarn);
+  }
+
+  function startTicker() {
+    paintDash();
+    if (ticker) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    ticker = setInterval(() => {
+      const inc = Math.random() * 2.4 + 0.35;
+      balance += inc; todayEarn += inc; weekEarn += inc; totalEarn += inc;
+      paintDash();
+    }, 3600);
+  }
+
+  function stopTicker() {
+    if (ticker) { clearInterval(ticker); ticker = null; }
+  }
+
+  function addActivity(title, sub, amount, dir) {
+    const list = document.getElementById("activityList");
+    if (!list) return;
+    const li = document.createElement("li");
+    li.innerHTML =
+      '<div class="a-ic ' + dir + '">' + (dir === "in" ? "＋" : "−") + '</div>' +
+      '<div class="a-tx"><b>' + title + '</b><small>' + sub + '</small></div>' +
+      '<div class="a-amt ' + dir + '">' + (dir === "in" ? "+" : "−") + fmt(amount) + '</div>';
+    list.prepend(li);
+    while (list.children.length > 8) list.removeChild(list.lastChild);
+  }
+
+  /* ---------- Dashboard tasks — tap to earn ---------- */
+  document.querySelectorAll("#dashTasks .dash-task").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (btn.classList.contains("done")) return;
+      const pay = parseFloat(btn.dataset.pay);
+      const title = btn.dataset.title;
+      if (!pay || isNaN(pay)) return;
+
+      balance += pay; todayEarn += pay; weekEarn += pay; totalEarn += pay;
+      paintDash();
+      addActivity("Task completed", title, pay, "in");
+      btn.classList.add("done");
+      const payEl = btn.querySelector(".pay");
+      if (payEl) payEl.textContent = "✓ Earned";
+    });
+  });
+
+  /* ================================================================
+     YOUTUBE — WATCH & EARN
+  ================================================================ */
+  let ytPlayer = null;
+  let ytApiReady = false;
+  let ytPending = null;
+  let videoCredited = false;
+  let videoInitStarted = false;
+
+  function loadYouTubeAPI(cb) {
+    if (ytApiReady) { cb(); return; }
+    ytPending = cb;
+    if (window.YT && window.YT.Player) { ytApiReady = true; cb(); return; }
+    if (!document.getElementById("ytApiScript")) {
+      const s = document.createElement("script");
+      s.id = "ytApiScript";
+      s.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(s);
+      window.onYouTubeIframeAPIReady = function () {
+        ytApiReady = true;
+        if (ytPending) { const f = ytPending; ytPending = null; f(); }
+      };
+    }
+  }
+
+  function ensureVideoPlayer() {
+    if (ytPlayer || videoInitStarted) return;
+    if (!document.getElementById("ytPlayer")) return;
+    videoInitStarted = true;
+    loadYouTubeAPI(() => {
+      if (ytPlayer) return;
+      ytPlayer = new YT.Player("ytPlayer", {
+        videoId: YT_VIDEO_ID,
+        playerVars: { rel: 0, modestbranding: 1, playsinline: 1 },
+        events: { onStateChange: onVideoStateChange }
+      });
+    });
+  }
+
+  function onVideoStateChange(e) {
+    const statusEl = document.getElementById("videoStatus");
+    if (!statusEl) return;
+    if (e.data === YT.PlayerState.PLAYING) {
+      if (!videoCredited) {
+        statusEl.textContent = "▶ Playing… finish the video to earn $0.50.";
+        statusEl.className = "video-status playing";
+      }
+    } else if (e.data === YT.PlayerState.PAUSED) {
+      if (!videoCredited) {
+        statusEl.textContent = "⏸ Paused — keep watching to earn $0.50.";
+        statusEl.className = "video-status paused";
+      }
+    } else if (e.data === YT.PlayerState.ENDED) {
+      if (!videoCredited) creditVideoReward();
+    }
+  }
+
+  function creditVideoReward() {
+    videoCredited = true;
+    balance += VIDEO_REWARD;
+    todayEarn += VIDEO_REWARD;
+    weekEarn += VIDEO_REWARD;
+    totalEarn += VIDEO_REWARD;
+    paintDash();
+    addActivity("YouTube video watched", "Full video completed", VIDEO_REWARD, "in");
+
+    const statusEl = document.getElementById("videoStatus");
+    if (statusEl) {
+      statusEl.textContent = "✅ Video completed — $0.50 added to your balance.";
+      statusEl.className = "video-status earned";
+    }
+    const badge = document.getElementById("videoRewardBadge");
+    if (badge) {
+      badge.textContent = "✓ Earned";
+      badge.classList.add("earned");
+    }
+  }
+
+  /* ---------- Log out ---------- */
+  document.getElementById("logoutBtn").addEventListener("click", () => {
+    setAuthorized(false);
+    location.hash = "#/home";
+  });
+
+  /* ================================================================
+     SIGNUP VALIDATION
+  ================================================================ */
+  const signupForm = document.getElementById("signup");
+  const username = document.getElementById("username");
+  const phone = document.getElementById("phone");
+  const password = document.getElementById("password");
+  const confirmPassword = document.getElementById("confirmPassword");
+  const formMsg = document.getElementById("formMsg");
+
+  signupForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    formMsg.textContent = "";
+    formMsg.classList.remove("err");
+
+    const userVal = username.value.trim();
+    const phoneVal = phone.value.replace(/[\s\-()]/g, "");
+    const passVal = password.value;
+    const confirmVal = confirmPassword.value;
+
+    if (!userVal || userVal.length < 3) {
+      formMsg.textContent = "Username must be at least 3 characters.";
+      formMsg.classList.add("err");
+      username.focus(); return;
+    }
+    if (!AIRTEL_UG.test(phoneVal)) {
+      formMsg.textContent = "Airtel Uganda numbers only (070, 074, 075 or 076 + 7 digits). Example: 0701234567.";
+      formMsg.classList.add("err");
+      phone.focus(); return;
+    }
+    if (!passVal || passVal.length < 6) {
+      formMsg.textContent = "Password must be at least 6 characters.";
+      formMsg.classList.add("err");
+      password.focus(); return;
+    }
+    if (passVal !== confirmVal) {
+      formMsg.textContent = "Passwords do not match.";
+      formMsg.classList.add("err");
+      confirmPassword.focus(); return;
+    }
+
+    formMsg.textContent = "✅ Account created! Dial *185*9# → merchant code 7285061 → confirm MOBILE LABS → pay " + ACTIVATION_FEE + " to activate.";
+    signupForm.reset();
+  });
+
+  /* ================================================================
+     LOGIN → AUTHORIZED DASHBOARD
+  ================================================================ */
+  const loginForm = document.getElementById("login");
+  const loginId = document.getElementById("loginId");
+  const loginPass = document.getElementById("loginPass");
+  const loginMsg = document.getElementById("loginMsg");
+
+  loginForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    loginMsg.textContent = "";
+    loginMsg.classList.remove("err");
+
+    if (!loginId.value.trim()) {
+      loginMsg.textContent = "Enter your username or Airtel number.";
+      loginMsg.classList.add("err");
+      loginId.focus(); return;
+    }
+    if (!loginPass.value || loginPass.value.length < 6) {
+      loginMsg.textContent = "Enter your password (at least 6 characters).";
+      loginMsg.classList.add("err");
+      loginPass.focus(); return;
+    }
+
+    const captured = loginId.value.trim();
+    loginMsg.textContent = "✅ Authorized by admin. Opening your dashboard…";
+
+    setTimeout(() => {
+      setAuthorized(true, captured);
+      loginForm.reset();
+      loginMsg.textContent = "";
+      location.hash = "#/dashboard";
+    }, 550);
+  });
+
+  /* ================================================================
+     WITHDRAW — MERCHANT CODE GATE
+  ================================================================ */
+  const withdrawForm = document.getElementById("withdrawForm");
+  const wdCode = document.getElementById("wdCode");
+  const wdAmount = document.getElementById("wdAmount");
+  const wdMethod = document.getElementById("wdMethod");
+  const wdMsg = document.getElementById("wdMsg");
+
+  withdrawForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    wdMsg.textContent = "";
+    wdMsg.classList.remove("err");
+
+    if (wdCode.value.trim() !== MERCHANT_CODE) {
+      wdMsg.textContent = "Gate 1 failed — enter the correct merchant code (" + MERCHANT_CODE + ").";
+      wdMsg.classList.add("err");
+      wdCode.focus(); return;
+    }
+
+    const amt = parseFloat(wdAmount.value);
+    if (!amt || isNaN(amt)) {
+      wdMsg.textContent = "Enter a withdrawal amount.";
+      wdMsg.classList.add("err");
+      wdAmount.focus(); return;
+    }
+    if (amt < 5) {
+      wdMsg.textContent = "Minimum withdrawal is $5.";
+      wdMsg.classList.add("err");
+      wdAmount.focus(); return;
+    }
+    if (amt > balance) {
+      wdMsg.textContent = "Amount exceeds your available balance of " + fmt(balance) + ".";
+      wdMsg.classList.add("err");
+      wdAmount.focus(); return;
+    }
+
+    balance -= amt;
+    paintDash();
+    addActivity("Withdrawal requested", wdMethod.value, amt, "out");
+    wdMsg.textContent = "✅ Withdrawal of " + fmt(amt) + " to " + wdMethod.value + " submitted. Processing within 24 hours.";
+    withdrawForm.reset();
+  });
+
+  /* ================================================================
+     CONTACT FORM
+  ================================================================ */
+  const contactForm = document.getElementById("contactForm");
+  const cName = document.getElementById("cName");
+  const cEmail = document.getElementById("cEmail");
+  const cMsg = document.getElementById("cMsg");
+  const contactMsg = document.getElementById("contactMsg");
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    contactMsg.textContent = "";
+    contactMsg.classList.remove("err");
+
+    if (!cName.value.trim()) {
+      contactMsg.textContent = "Please enter your name.";
+      contactMsg.classList.add("err");
+      cName.focus(); return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(cEmail.value.trim())) {
+      contactMsg.textContent = "Please enter a valid email address.";
+      contactMsg.classList.add("err");
+      cEmail.focus(); return;
+    }
+    if (!cMsg.value.trim()) {
+      contactMsg.textContent = "Please write a message.";
+      contactMsg.classList.add("err");
+      cMsg.focus(); return;
+    }
+
+    contactMsg.textContent = "✅ Message sent — we'll reply within 24 hours.";
+    contactForm.reset();
+  });
+
+  /* ---------- Boot ---------- */
+  render();
+})();
+</script>
+</body>
+</html>
